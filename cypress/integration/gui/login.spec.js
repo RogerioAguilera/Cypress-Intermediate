@@ -4,7 +4,9 @@ describe('Login', () => {
     it('Acessar login com sucesso', () => {
         cy.login()
 
-        cy.get()
+        cy.get("[data-test='menu-home']").should('contain','a.nav-link.active')
+
+    
         
     });
     
